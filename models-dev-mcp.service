@@ -1,0 +1,16 @@
+[Unit]
+Description=Models.dev MCP Server (SSE)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/whoami/Documents/MICRODATA/AI/RISET/models.dev-mcp
+ExecStart=/usr/bin/node /home/whoami/Documents/MICRODATA/AI/RISET/models.dev-mcp/dist/index.js sse --port 3000
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=HOST=0.0.0.0
+
+[Install]
+WantedBy=multi-user.target
