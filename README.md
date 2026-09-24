@@ -113,7 +113,7 @@ For clients that only support stdio natively, connect to your SSE server using `
 }
 ```
 
-## 🛠️ Tools (34 total)
+## 🛠️ Tools (37 total)
 
 ### 🔍 Model Discovery (7)
 | Tool | Description |
@@ -126,14 +126,21 @@ For clients that only support stdio natively, connect to your SSE server using `
 | `get_latest_models` | Models released in the last N days |
 | `get_trending_models` | Most popular models by provider count |
 
-### 💰 Pricing Analysis (5)
+### 💰 Pricing Analysis (6)
 | Tool | Description |
 |---|---|
-| `compare_pricing` | Compare pricing across providers |
-| `find_cheapest_model` | Find cheapest model meeting requirements |
-| `calculate_cost` | Calculate cost for token usage |
+| `compare_pricing` | Compare pricing across providers (supports `currency` conversion) |
+| `find_cheapest_model` | Find cheapest model meeting requirements (supports `currency` conversion) |
+| `calculate_cost` | Calculate cost for token usage (supports `currency` conversion) |
+| `estimate_app_budget` | Simulate app operational costs based on DAU, turns/user, & tokens (Daily, Weekly, Monthly, Yearly) |
 | `get_free_models` | List free models |
-| `price_comparison_table` | Multi-model price comparison table |
+| `price_comparison_table` | Multi-model price comparison table (supports `currency` conversion) |
+
+### 🔱 Currency Conversion (2)
+| Tool | Description |
+|---|---|
+| `convert_currency` | Convert USD amount to world currencies (IDR, EUR, JPY, GBP, AUD, CAD, SGD, etc.) |
+| `list_supported_currencies` | List all supported world currency codes & exchange rates |
 
 ### 🏢 Provider Intelligence (5)
 | Tool | Description |

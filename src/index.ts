@@ -93,7 +93,7 @@ async function main(): Promise<void> {
             status: "ok",
             transport: "sse",
             port,
-            tools: 34,
+            tools: 37,
           }),
         );
         return;

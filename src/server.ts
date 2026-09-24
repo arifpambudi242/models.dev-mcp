@@ -8,6 +8,7 @@ import { registerCapabilityTools } from "./tools/capabilities.js";
 import { registerIntegrationTools } from "./tools/integration.js";
 import { registerAnalyticsTools } from "./tools/analytics.js";
 import { registerUtilityTools } from "./tools/utility.js";
+import { registerCurrencyTools } from "./tools/currency.js";
 
 export function createServer(): McpServer {
   const server = new McpServer({
@@ -23,6 +24,7 @@ export function createServer(): McpServer {
   registerIntegrationTools(server);    // 4 tools: SDK code gen, env setup, model ID mapping, validate
   registerAnalyticsTools(server);      // 4 tools: market overview, lab summary, context leaders, price dist
   registerUtilityTools(server);        // 3 tools: schema, changelog, benchmarks
+  registerCurrencyTools(server);       // 2 tools: convert_currency, list_supported_currencies
 
   return server;
 }
